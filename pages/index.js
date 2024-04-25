@@ -13,6 +13,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import styled from '@emotion/styled'
 
 const Home = () => (
   <Layout>
@@ -30,7 +31,9 @@ const Home = () => (
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            César Arguijo
+            <TitleStyled>
+              César Arguijo
+            </TitleStyled>
           </Heading>
           <p>Digital Craftsman ( Artist / Developer / Designer )</p>
         </Box>
@@ -58,22 +61,18 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Experienced Software Developer adept in bringing forth expertise in
-          design, installation, testing and maintenance of software systems.
-          Equipped with a diverse and promising skill-set. Proficient in various
-          platforms, languages, and embedded systems. Experienced with the
-          latest cutting edge development tools and procedures. Able to
-          effectively self-manage during independent projects, as well as
-          collaborate as part of a productive team.{' '}
-          {/* <NextLink href="/works/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . */}
+          Experienced Full Stack Developer with over a decade of hands-on experience 
+          building dynamic digital solutions. 
+          Passionate about weaving immersive user experiences and devising innovative solutions across diverse 
+          programming landscapes. Proficient in a multitude of languages and platforms, 
+          adept at navigating the evolving technology landscape. Skilled in the full software development lifecycle, 
+          from design and implementation to testing and maintenance. A self-driven professional with a knack 
+          for leveraging cutting-edge tools and methodologies to deliver impactful results.          
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              Check Out My Portfolio
             </Button>
           </NextLink>
         </Box>
@@ -83,23 +82,48 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
+
         <BioSection>
-          <BioYear>2015</BioYear>
-          Completed the Computer Science Engineer at Universidad EPCA
+          <BioYear>2024</BioYear>
+          Fullstack Developer @TRATO
+        </BioSection>
+        <BioSection>
+          <BioYear>2024</BioYear>
+          Freelance Web Developer @AgrodYAsociados
+        </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Fullstack Developer @Neondomain
+        </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Freelance Web Developer @DCGaskets
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Software Engineer @SMS Masivos
         </BioSection>
         <BioSection>
           <BioYear>2017</BioYear>
-          Diploma in Project Management
+          Freelance Software Engineer to create desktop applicaton at @CalzadoKaroline
+        </BioSection>
+        <BioSection>
+          <BioYear>2016</BioYear>
+          Freelance Software Engineer to create desktop applicaton at @CentroMedicoDelBajio
+        </BioSection>
+        <BioSection>
+          <BioYear>2016</BioYear>
+          Software Engineer @VZERT
+        </BioSection>
+        <BioSection>
+          <BioYear>2015</BioYear>
+          Collaborated in a web platform to manage bank reports @UPPERBUSINESS DIVISION
         </BioSection>
         <BioSection>
           <BioYear>2014</BioYear>I participated in the Microsoft Student
           Partners program
         </BioSection>
-        <BioSection>
-          <BioYear>2015</BioYear>
-          Collaborated in financial account management system for BanBajio Bank
-          at UPPERBUSINESS DIVISION
-        </BioSection>
+        
       </Section>
 
       <Section delay={0.3}>
@@ -121,6 +145,11 @@ const Home = () => (
     </Container>
   </Layout>
 )
+
+const TitleStyled = styled.p`
+  background: -webkit-linear-gradient(117deg, rgb(129 230 217) 0%, #cc4d7d 100%) text;
+  -webkit-text-fill-color: transparent;
+`
 
 export default Home
 export { getServerSideProps } from '../components/chakra'

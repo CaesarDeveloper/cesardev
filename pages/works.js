@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { WorkGridItem, WorkListItem } from '../components/grid-item'
 
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
@@ -107,9 +107,10 @@ const Works = () => (
           <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
             P2P private file sharing tool with MSN Messenger integration for
             Windows
-          </WorkGridItem>
+          </WorkGridItem>                    
+
         </Section>
-      </SimpleGrid>
+      </SimpleGrid>      
     </Container>
   </Layout>
 )
